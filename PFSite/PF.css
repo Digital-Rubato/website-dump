@@ -1,0 +1,42 @@
+body{
+    margin:auto;
+    padding:25% 0 0 0;
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-areas:
+        "name"
+        "."
+        "title";        
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align:center;
+    background: #000;
+    color: white;
+}
+.name{
+    grid-area: name;
+    font-size: 70px;
+}
+.name:hover span {
+    display:none;
+    font-size: 70px;
+    border: 2px solid white;
+}
+.name:hover::before{
+    content: "About";
+}
+.title:hover span {
+    display:none;
+    border: 2px solid white;
+}
+.title:hover::before{
+    content: "Projects.";
+}
+.links{
+    grid-area: links;
+}
+.title{
+    grid-area: title;
+}

@@ -1,0 +1,65 @@
+.wrapper{
+    display: grid;
+    grid-template-areas:
+    "nav content";
+    
+}
+.nav{
+    display:grid;
+    grid-template-columns:25rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "pic"
+    "link1"
+    "link2"
+    "link3"
+    "link4"
+    "status";
+    padding: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+.content{
+    display: grid;
+    grid-template-columns:50rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "icon"
+    "box1"
+    "box2"
+    "box3"
+    "box4";
+    padding: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+.linkstyle{ 
+    border: 1px solid black;
+}
+.boxstyle{
+    border: 1px solid black;
+}
+.pic{   
+    grid-area: "pic";
+    margin: 0 0 40px 0;
+}
+.link1{    
+    grid-area:"link1";
+    margin: 0 0 40px 0;}
+.link2{    
+    grid-area:"link2";
+    margin: 0 0 40px 0;
+}
+.link3{    
+    grid-area:"link3";
+    margin: 0 0 40px 0;
+}
+.link4{    
+    grid-area:"link4";
+    margin: 0 0 40px 0;
+}
+.icon{grid-area: "icon";}
+.box1{  grid-area:"box1";}
+.box2{  grid-area:"box2";}
+.box3{  grid-area:"box3";}
+.box4{  grid-area:"box4";}

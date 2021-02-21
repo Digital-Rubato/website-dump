@@ -1,0 +1,36 @@
+      .mainheader { grid-area: header; }
+      .content { grid-area: content; }
+      .sidebar { grid-area: sidebar; }
+      .mainfooter { grid-area: footer; }
+
+      .wrapper {
+        display: grid;
+        width: 90%;
+        margin: 0 auto 0 auto;
+
+        grid-template-columns: 9fr 40px 3fr;
+        grid-template-rows: auto ;
+        grid-template-areas:
+          "header header header"
+          "content . sidebar"
+          "footer footer footer"
+        ;
+      }
+
+      /* article grid setup
+      A current regression in the Chrome implementation means that the text overflows in this example.
+      https://bugs.chromium.org/p/chromium/issues/detail?id=619567
+      */
+      .content .primary { grid-area: article-primary; }
+      .content aside { grid-area: article-secondary; }
+      .content > h1 { grid-area: chapterhead ; }
+
+      .content {
+        display: grid;
+        grid-template-columns: 9fr 40px 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "chapterhead . ."
+          "article-primary . article-secondary"
+      ;
+      }

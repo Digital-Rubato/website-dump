@@ -1,0 +1,67 @@
+body{
+    background-image:url(pexels-photo-66997.jpeg);  
+    background-size:105em auto;
+    /* FIX THIS ^^^^ */
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(145deg,rgb(0, 75, 104),rgb(214, 187, 114));  */
+    /* background-color: rgb(0, 75, 104); */
+    /* background-repeat:no-repeat; */
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "name"
+        "title"
+        "work";
+    text-align: center;
+    padding-top: 300px;
+    font-size: 50px;
+    color: rgb(255, 241, 224);
+}
+.name{
+    grid-area: "name";
+}
+.title{
+    grid-area: "title";
+}
+.work{
+    grid-area: "work";
+    
+}
+.projectblog{
+    margin-left: 20px;
+}
+/* padding and margin for hr */
+h4,h5{
+    padding: 20px;
+    margin: 0;
+}
+ul,li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 241, 224);
+}
+img{
+    width:100%;
+    height: auto;
+}
+
+/* width is for size */
+hr {
+    display: block;
+    height: 1px;
+    width: 13em;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0px auto;
+    padding: 0;
+}

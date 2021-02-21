@@ -1,0 +1,53 @@
+:root{
+    --blue: rgb(0, 65, 139);
+    --orange: rgb(146, 88, 0);
+    --aqua: rgb(109, 218, 199);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg, var(--blue), var(--orange));
+    color: var(--aqua);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "link . project";
+}
+.link{
+    grid-area: "link";
+    text-align: center;
+}
+.project{
+    grid-area: "project";
+    margin-left: 15em;
+    text-align: center;
+}
+P1{
+    grid-area: "P1";
+}
+P2{
+    grid-area: "P2";
+}
+P3{    
+    grid-area: "P3";
+}
+P4{    
+    grid-area: "P4";
+}
+P5{   
+    grid-area: "P5";
+}
+ul{
+    list-style-type: none;
+    display: flexbox;
+    position: fixed;
+}
+li{ 
+    border: solid black 1px;
+    padding: 20px 80px 20px 80px; 
+    margin-top: 10px; 
+}

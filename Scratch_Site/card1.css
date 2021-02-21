@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after{
+    border-width: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+img{
+    max-width: 25%;
+}
+
+div {
+    background-color: lightblue;
+}
+
+div :nth-child(odd){
+    background-color: lightcoral;
+}
+
+.intro-card{
+    display:grid;        
+    grid-template-areas:
+    "img header"
+    "img subheader"
+    "img icon";
+    
+}
+.intro-img{
+    grid-area: img;
+    position: relative;
+}
+.intro-header{
+    grid-area: header;
+    text-align: right;
+}
+.intro-subheader{
+    grid-area: subheader;
+    text-align: right;
+}
+.intro-icon{
+    grid-area: icon;
+    text-align: right;
+}
+

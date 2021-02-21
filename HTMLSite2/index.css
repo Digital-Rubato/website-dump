@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-position: center;
+    background-color: whitesmoke;
+}
+navBar{    
+    border: 1px solid green;
+    margin: 30px;
+    float: right;
+    position: inline-block;
+}
+subNav{
+    text-decoration: none;
+    display: inline-block;
+}

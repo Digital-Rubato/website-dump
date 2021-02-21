@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-position: center;
+    background-color: rgb(63, 52, 52);
+}
+.main{    
+    background-color: darkslategray ;
+    height: 100vh;
+    width: 13%;
+    float: left;
+    list-style-type: none;
+    position: fixed;
+}
+.subnav{
+    display: block;
+    padding: 50px 0px;
+    margin-left: 5px;
+    
+}
+.main a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 15px;
+    border: 1px solid gray transparent;
+    transition: 0.6s ease;
+}
+.main a:hover{
+    background-color: gray;
+    
+}
+.main.active a{
+    background-color: gray;    
+}
+.title{
+    position: fixed;
+    top: 25%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.button{
+    position: absolute;
+    top: 30%;
+    left: 56.5%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+.btn{
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    color: white;
+    background-color: gray;
+}
+.push{
+    margin-left: 110px;
+}
